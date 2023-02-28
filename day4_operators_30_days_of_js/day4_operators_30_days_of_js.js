@@ -67,3 +67,56 @@ document.write(2 !== '2'); // true
 document.write("<br>") //for breaking the line
 document.write(2 !== 2); // false
 document.write("<br>") //for breaking the line
+
+
+var a = 3;
+
+// greater than operator
+console.log(a > 2); // true
+
+
+var a = 3;
+
+// greater than or equal operator
+console.log(a >= 3); //true
+
+var a = 3, b = 2;
+
+// less than operator
+console.log(a < 2); // false
+console.log(b < 3); // true
+
+var a = 2;
+
+// less than or equal operator
+console.log(a <= 3) // true
+console.log(a <= 2); // true
+
+
+//JavaScriptLogical Operators
+//Logical operators are used to determine the logic between variables or values.
+
+var a = true, b = false;
+var c = 4;
+
+// logical AND
+console.log(a && a); // true
+console.log(a && b);  // false
+
+console.log((c > 2) && (c < 2)); // false
+
+
+var a = true, b = false, c = 4;
+
+
+// logical OR
+console.log(a || b); // true
+console.log(b || b); // false
+console.log((c>2) || (c<2)); // true
+
+var a = true, b = false;
+
+// logical NOT
+console.log(!a); // false
+console.log(!b); // true
+
