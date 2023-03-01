@@ -19,7 +19,7 @@ default:
 
 */
 
-//lets create a switch case for the person who want to buy is own sim card
+//lets create a switch case for the person who want to buy his own sim card
 
 var age = 17;//condition
 document.write("<br>");//this code is used for line break
