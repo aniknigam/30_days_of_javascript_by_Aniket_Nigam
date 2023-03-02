@@ -25,24 +25,77 @@ document.write("4");
 document.write("<br>");
 document.write("5");
 
-we can write:
+we can write the following code for the same output :
 
-for(1 = 0; i<0; i++){
+for(i = 1; i<0; i++){
     document.write(i + "<br>")
 }
 
+ */
 
+/*
+syntax for - For Loop
+for (expression 1; expression 2; expression 3) {
+  // code block to be executed
+}
+
+The for statement creates a loop with 3 optional expressions:
+Expression 1 is executed (one time) before the execution of the code block.
+
+Expression 2 defines the condition for executing the code block.
+
+Expression 3 is executed (every time) after the code block has been executed.
 
 
  */
-for(1 = 1; i<=5; i++){
-    document.write(i + "<br>")
+
+
+for(i=0; i<=5; i++)//for loop implementation
+{
+    document.write(i + "<br>");//statement
 }
 
 
-for (i=1; i<=5; i++)  
-{  
-document.write(i + "<br/>")  
-}  
+/*
+The while loop works through for a  code as long as a specified condition is true.
 
-document.write("hello")
+Syntax for while loop
+
+
+while (condition)  
+{  
+    code to be executed  
+}  
+ 
+
+*/
+
+var i = 100;
+
+while(i<=110){
+    document.write(i + "<br>");
+    i++;//this will print the vale of i till the condition is true
+}
+
+
+/*
+The do while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+
+Syntax for do while loop
+
+do {
+  // code block to be executed
+}
+while (condition);
+*/
+
+var a = 55;
+
+do{
+    document.write("The number is: " + a + "<br>");
+    a--;
+}
+while(a>=50)
+
+
+
