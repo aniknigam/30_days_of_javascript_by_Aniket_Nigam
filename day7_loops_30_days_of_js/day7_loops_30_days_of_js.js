@@ -98,4 +98,7 @@ do{
 while(a>=50)
 
 
+//We will learn for in loop with objects because that is mostly used with objects.
+
+
 
