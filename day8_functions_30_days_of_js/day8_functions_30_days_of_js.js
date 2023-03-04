@@ -45,5 +45,12 @@ function calc(a, b){
     return a + b;
 }
 var a = calc(10, 50);
-
+document.write("<br>");
 document.write(a)
+
+//Arrow function
+hello = () =>{
+    document.write("this is the syntax for writing an arrow function")
+}
+document.write("<br>");
+hello();
