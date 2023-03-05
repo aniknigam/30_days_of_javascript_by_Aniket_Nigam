@@ -49,8 +49,6 @@ document.write("<br>");
 document.write(a)
 
 //Arrow function
-hello = () =>{
-    document.write("this is the syntax for writing an arrow function")
-}
+hello = () => document.write("this is the syntax for writing an arrow function");
 document.write("<br>");
 hello();
