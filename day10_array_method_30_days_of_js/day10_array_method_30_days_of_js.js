@@ -6,6 +6,7 @@ The JavaScript array concat() method combines two or more arrays and returns a n
 This method doesn't make any change in the original array.
 Syntax
 array.concat(arr1,arr2,....,arrn)  
+
 */
 
 //example
