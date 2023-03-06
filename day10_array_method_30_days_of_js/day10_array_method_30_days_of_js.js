@@ -21,6 +21,7 @@ document.write("<br>");
 document.write(all);
 document.write("<br>");
 
+
 /* Javascript  copyWithin() method
 The JavaScript array copyWithin() method copies the part of the given 
 array with its own elements and returns the modified array. 
