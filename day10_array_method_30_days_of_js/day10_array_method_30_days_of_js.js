@@ -36,7 +36,11 @@ array.copyWithin(target, start, end)
 
 var a = ["japan", "swiss", "italy", "masai mara"];
 var result = a.copyWithin(0,1,3);
+// 0 is the targer place and 1 is where we will start and 3 is where we will stop
 document.write(result);
+
+var itr = a.entries();
+document.write(itr);
 
 
 
