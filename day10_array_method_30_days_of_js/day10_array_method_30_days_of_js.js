@@ -423,3 +423,26 @@ document.write("<br>");
 document.writeln("Orginal array: "+arr+"<br>");  
 document.writeln("Extracted element: "+arr.pop()+"<br>");  
 document.writeln("Remaining elements: "+ arr);  
+
+/*
+JavaScript Array map() method
+The JavaScript array map() method calls the specified function for every array element and returns the new array. This method doesn't change the original array.
+
+Syntax
+The map() method is represented by the following syntax:
+
+array.map(callback(currentvalue,index,arr),thisArg)    
+ */
+
+//example
+
+var arr=[2.1,3.5,4.7];  
+var result=arr.map(Math.round);  
+document.write("<br>");
+document.writeln(result); 
+
+//example 2
+
+var arr=[2,4,6];  
+var result=arr.map(x=>x*3);  
+document.writeln(result);
