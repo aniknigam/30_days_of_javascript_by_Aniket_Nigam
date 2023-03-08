@@ -349,6 +349,7 @@ var arr=["AngularJs","Node.js","JQuery"]
 var result=arr.join('-');
 document.write("<br>");
 document.write(result);  
+document.write("<br>");
 
 
 /*
@@ -367,3 +368,21 @@ document.write(itr+"<br>");
 for (let key of itr) {  
   document.write(key+"<br>");  
 }  
+
+/*
+JavaScript Array slice() method
+The JavaScript array slice() method extracts the part of 
+the given array and returns it. This method doesn't change the original array.
+
+Syntax
+The slice() method is represented by the following syntax:
+
+array.slice(start,end) 
+*/
+
+//example
+
+var arr=["AngularJS","Node.js","JQuery","Bootstrap"]  
+var result=arr.slice(0,3);  
+document.write("<br>");
+document.writeln(result);  
