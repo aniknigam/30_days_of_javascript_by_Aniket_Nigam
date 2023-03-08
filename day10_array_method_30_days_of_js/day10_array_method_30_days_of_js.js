@@ -386,3 +386,21 @@ var arr=["AngularJS","Node.js","JQuery","Bootstrap"]
 var result=arr.slice(0,3);  
 document.write("<br>");
 document.writeln(result);  
+
+/*
+JavaScript Array push() method
+The JavaScript array push() method adds one or more elements to the end of the given array. This method changes the length of the original array.
+
+Syntax
+The push() method is represented by the following syntax:
+
+array.push(element1,element2....elementn)  
+
+*/
+
+//example
+
+var arr=["AngularJS","Node.js"];  
+arr.push("JQuery");  
+document.write("<br>");
+document.writeln(arr);  
