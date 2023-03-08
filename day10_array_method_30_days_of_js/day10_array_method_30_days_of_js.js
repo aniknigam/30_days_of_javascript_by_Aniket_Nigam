@@ -133,8 +133,219 @@ var a = ["react", "angular", "vue"];
 var b = a.fill("bootstrap");//it will fill all the values in the array to the bootstrap.
 document.write(b);
 document.write("<br>");
-var c = a.fill("bootstrap",1);//it tells the position
-document.write(a);
+
+/*
+JavaScript Array flatMap() Method
+The flatMap() method is a combination of flat() and map() methods.
+ This method initially maps each array element through a mapping function, 
+ then flatten up the array with depth value as 1.
+ 
+ Syntax:
+ var newArr=arr.flatMap(function callback(currentValue[ , index[ , array]])  
+{  
+return element  
+} [ , thisArg])  
+ 
+ */
+
+//example
+
+var arr = [2,4,6,8];
+var fa = arr.flatMap(x => [x/2]);
+document.write(fa);
+
+//example 2
+ var a1 = ["a", "b", "c", "d"];
+ var a2 = [1,2,3,4];
+ var c = a1.flatMap((a1,index) => [a1,a2[index]]);
+ document.write("<br>");
+ document.write("array with index" + "<br>" + c + "<br>");
+
+ //example 3
+
+ var x = a2.flatMap(x => [x * 3]);
+ document.write(x);
+
+ /*
+ JavaScript Array from() Method
+The from() method creates a new array that holds the shallow copy from an array or iterable object.
+ When applied to a string, each word gets converted to an array element in the new array.
+
+ Syntax
+ Array.from(object,map_fun,thisArg);  
+ 
+ */
+
+ //example
+
+var a = Array.from("we are creating and array by a string");
+document.write("The result is " + "<br>" + a + "<br>") ;
+
+/*
+JavaScript Array filter() method
+The JavaScript array filter() method filter and extract the element of an array
+ that satisfying the provided condition. It doesn't change the original array.
+
+ Syntax:
+
+array.filter(callback(currentvalue,index,arr),thisArg)  
+
+ */
+
+check = (value) => {
+   return value> 30;
+}
+var a = [20, 25, 30, 40, 50, 54, 100];
+var b = a.filter(check);
+document.writeln(b);
+
+/*
+JavaScript Array find() method
+The JavaScript array find() method returns the first element of the given array
+ that satisfies the provided function condition.
+
+Syntax
+
+array.find(callback(value,index,arr),thisArg)  
+*/
+
+// example
+
+var a = [ 100, 200, 300, 400 , 500];
+
+check = (value) =>{
+   return value  >  100;
+}
+document.write("<br>");
+document.writeln(a.find(check));
 document.write("<br>");
 
+/*
+JavaScript Array findIndex() method
+The JavaScript array findIndex() method returns the index of first element 
+of the given array that satisfies the provided function condition. It returns -1, 
+if no element satisfies the condition.
 
+Syntax
+The findIndex() method is represented by the following syntax:
+
+array.findIndex(callback(value,index,arr),thisArg)    
+
+ */
+
+//example
+
+var arr=[5,22,19,25,34];  
+var result=arr.findIndex(x=>x>20);  
+document.writeln(result);
+document.write("<br>");
+
+/*
+
+ JavaScript Array forEach() method
+The JavaScript array forEach() method is used to 
+invoke the specified function once for each array element.
+
+Syntax
+The forEach() method is represented by the following syntax:
+
+array.forEach(callback(currentvalue,index,arr),thisArg)  
+ */
+
+// example
+
+var sum = 10;
+var arr = [2,3,4,5,6,7];
+
+arr.forEach(test = (element) =>{
+    sum += element;
+    document.writeln(sum);
+})
+
+/*
+JavaScript Array includes() method
+The JavaScript array includes() method checks whether the given array contains the specified element.
+ It returns true if an array contains the element, otherwise false.
+
+Syntax
+The includes() method is represented by the following syntax:
+
+array.includes(element,start)  
+*/
+
+// example
+var a =  ["js", "html", "css"];
+var b = a.includes("html");
+document.write("<br>");
+document.write(b);
+document.write("<br>");
+
+/*
+
+JavaScript Array indexOf() method
+The JavaScript array indexOf() method is used to search the position of 
+a particular element in a given array. This method is case-sensitive.
+
+The index position of first element in an array is always start with zero.
+ If an element is not present in an array, it returns -1.
+
+Syntax
+The indexOf() method is represented by the following syntax:
+
+array.indexOf(element,index)  
+
+*/
+
+// example
+
+var arr=["C","C++","Python","C++","Java"];  
+var result= arr.indexOf("C++");  
+document.writeln(result); 
+document.write("<br>");
+
+/*
+
+JavaScript Array isArray() Method
+The isArray() method is used to test whether the value passed is an array.
+ If it finds the passed value is an array, it returns True. Otherwise, it returns False.
+
+Syntax
+Array.isArray(obj_value);  
+
+*/
+
+// example
+
+document.write(Array.isArray(1,2,3,4)); //Testing the passed values.  
+document.write("<br>");
+
+//example 2
+
+var arr=[10,20,40,50]; //An integer array.  
+function f1() {  
+      document.write("arr is forming an array i.e., <br>" +arr);    
+                      }  
+function f2() {  
+     document.write("arr does not form any array. <br>");  
+                      }  
+if(Array.isArray(arr))  
+f1();  
+else  
+ f2();
+ 
+ /*
+ JavaScript Array join() method
+The JavaScript array join() method combines all the elements of an array into 
+a string and return a new string. We can use any type of separators to separate given array elements.
+
+Syntax
+The join() method is represented by the following syntax:
+
+array.join(separator) */
+
+//example
+
+var arr=["AngularJs","Node.js","JQuery"]  
+var result=arr.join('-');
+document.write("<br>");
+document.write(result);  
