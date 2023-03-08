@@ -404,3 +404,22 @@ var arr=["AngularJS","Node.js"];
 arr.push("JQuery");  
 document.write("<br>");
 document.writeln(arr);  
+
+
+/*
+JavaScript Array pop() method
+The JavaScript array pop() method removes the last element from the given array and return that element. This method changes the length of the original array.
+
+Syntax
+The pop() method is represented by the following syntax:
+
+array.pop()  
+ */
+
+//example
+
+var arr=["AngularJS","Node.js","JQuery"];  
+document.write("<br>");
+document.writeln("Orginal array: "+arr+"<br>");  
+document.writeln("Extracted element: "+arr.pop()+"<br>");  
+document.writeln("Remaining elements: "+ arr);  
