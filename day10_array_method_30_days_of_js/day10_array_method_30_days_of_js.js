@@ -481,3 +481,42 @@ var arr=["AngularJS","Node.js","JQuery","Bootstrap"]
 var result=arr.sort(); 
 document.write("<br>"); 
 document.writeln(result);  
+
+/*
+JavaScript Array slice() method
+The JavaScript array slice() method extracts the part of the given array and returns it. This method doesn't change the original array.
+
+Syntax
+The slice() method is represented by the following syntax:
+
+array.slice(start,end)  
+ */
+
+//example
+
+var arr=["AngularJS","Node.js","JQuery","Bootstrap"]  
+var result=arr.slice(1,2);  
+document.write("<br>");
+document.writeln(result);
+
+
+/*
+JavaScript Array values() Method
+The values() method creates a new array iterator object
+ that carries the values specified at each array index. 
+ We can iterate the array elements via loops or iterator methods.
+
+Syntax
+array.values();
+ */
+
+//example
+
+var arr = ["John","Mary","Tom","Harry","Sheero"]; //Intializing array elements  
+var itr = arr.values(); //Using values() method.  
+document.write("The array elements are:<br>");  
+for (let x of itr) {   
+    document.write("<br>"+x);  
+}  //This iterates the array elements through its index value.  
+
+
