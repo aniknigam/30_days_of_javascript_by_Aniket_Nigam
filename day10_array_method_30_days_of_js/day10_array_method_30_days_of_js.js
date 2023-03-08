@@ -349,3 +349,21 @@ var arr=["AngularJs","Node.js","JQuery"]
 var result=arr.join('-');
 document.write("<br>");
 document.write(result);  
+
+
+/*
+JavaScript Array keys() Method
+The keys() method creates and returns a new iterator object which holds the key for every index in the array.
+ This method does not affect the original array.
+
+Syntax
+array.keys();  
+*/
+
+var arr=['Mon','Tue','Wed','Thu','Sat'];   
+var itr=arr.keys();  
+document.write(itr+"<br>");  
+//Looping through each key.  
+for (let key of itr) {  
+  document.write(key+"<br>");  
+}  
