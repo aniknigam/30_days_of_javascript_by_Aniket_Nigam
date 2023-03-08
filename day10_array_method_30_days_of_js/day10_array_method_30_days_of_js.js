@@ -445,4 +445,34 @@ document.writeln(result);
 
 var arr=[2,4,6];  
 var result=arr.map(x=>x*3);  
+document.write("<br>");
 document.writeln(result);
+
+/*
+JavaScript Array lastIndexOf() method
+The JavaScript array lastIndexOf() method is used to search the position of a particular element in a given array. It behaves similar to indexOf() method with a difference that it start searching an element from the last position of an array.
+
+The lastIndexOf() method is case-sensitive. The index position of first character in a string is always start with zero. If an element is not present in a string, it returns -1.
+
+Syntax
+The lastIndexOf() method is represented by the following syntax:
+
+array.lastIndexOf(element,index)  
+ */
+
+//example
+
+var arr=["C","C++","Python","C++","Java"];  
+var result= arr.lastIndexOf("C++");  
+document.write("<br>");
+document.writeln(result); 
+
+/*
+JavaScript Array sort() method
+The JavaScript array sort() method is used to arrange the array elements in some order. By default, sort() method follows the ascending order.
+
+Syntax
+The sort() method is represented by the following syntax:
+
+array.sort(compareFunction)  
+ */
