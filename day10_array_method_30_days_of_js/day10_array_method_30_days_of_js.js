@@ -476,3 +476,8 @@ The sort() method is represented by the following syntax:
 
 array.sort(compareFunction)  
  */
+
+var arr=["AngularJS","Node.js","JQuery","Bootstrap"]  
+var result=arr.sort(); 
+document.write("<br>"); 
+document.writeln(result);  
