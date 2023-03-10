@@ -123,10 +123,45 @@ Object.freeze(obj)
 
 //example
 
-const obj1 = { property1: 'freeze'};  
-const obj2 = Object.freeze(obj1);  
+var obj1 = { property1: "freeze"};  
+var obj2 = Object.freeze(obj1);  
 obj2.property1 = 'new_data';  
-  console.log(obj2.property1); 
+document.write(obj2.property1); 
+
+//functions inside objects
+
+var sdetail = {
+       name: "Diwakar",
+       course: "Btech",
+       subject: "computer science",
+       full_detail: function() {
+        return this.name + " " + this.course  + " " + this.subject
+       }
+}
+document.write("<br>");
+ var a = sdetail.full_detail();
+ document.write(a);
+
+
+ /*
+ What is this?
+In JavaScript, the this keyword refers to an object.
+
+Which object depends on how this is being invoked (used or called).
+
+The this keyword refers to different objects depending on how it is used:
+
+In an object method, this refers to the object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that received the event.
+Methods like call(), apply(), and bind() can refer this to any object.
+
+ */
+
+
+
 
 
 
