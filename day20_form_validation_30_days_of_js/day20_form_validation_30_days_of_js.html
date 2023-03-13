@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>Javascript Form Validation</h1>
+    
+    <!-- Normal form-->
+    <form name="myform"  onsubmit="return validateform()">
+        Name: <input type="text" name="name" >
+        <br>
+        <br>
+        Password: <input type="password" name="password" >
+        <br>
+        <input type="submit" value="submit" >
+    </form> 
+
+    <!-- password mataching -->
+
+    <form action=""  name = "pform"onsubmit="return passwordmatch()">
+        Password: <input type="password" name="password" id="">
+        Re Enter Password: <input type="password" name="repassword" id="">
+        <input type="submit" value="submit">
+    </form>
+    <br>
+
+    <!--valid Number-->
+    <form action="" name="nform" onsubmit="nvalid()">
+        Enter Number: <input type="text" name="number">
+        <input type="submit" value="submit">
+    </form>
+
+
+    <script src="day20_form_validation_30_days_of_js.js"></script>
+</body>
+</html>
+
+
+
+<!-- 
+   
