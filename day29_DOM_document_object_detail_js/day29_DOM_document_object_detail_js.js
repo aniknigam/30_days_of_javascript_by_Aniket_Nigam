@@ -33,3 +33,23 @@ Adding Events Handlers
 Method	                                              Description
 document.getElementById(id).onclick = function(){code}	Adding event handler code to an onclick event
  */
+
+
+//example for appendChild method
+
+
+function adding() {
+    //words that will be typed will be stored in a
+         var a =    document.getElementById("words").value;
+   //creating the tad 
+        var b =   document.createElement("div") ;
+        //text
+        var c =   document.createTextNode(a);
+        b.appendChild(c);
+       var todo =   document.getElementById("first");
+       todo.appendChild(b);
+
+}
+deleting = () => {
+    
+}
